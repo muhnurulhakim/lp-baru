@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff3311;
+}
+
+.benefits {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.benefit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefit-item {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.benefit-item:hover {
+    background-color: #f9f9f9;
+}
+
+.pricing {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.pricing p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: #ff5733;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Media queries untuk responsivitas */
+
+/* Untuk layar tablet */
+@media (min-width: 768px) {
+    .benefit-list {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 1.3em;
+    }
+
+    .cta-btn {
+        padding: 20px 40px;
+        font-size: 1.1em;
+    }
+}
+
+/* Untuk layar desktop */
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 3.5em;
+    }
+
+    .hero p {
+        font-size: 1.5em;
+    }
+
+    .benefits h2 {
+        font-size: 2.5em;
+    }
+
+    .benefit-item {
+        width: 30%;
+    }
+
+    .cta-btn {
+        font-size: 1.2em;
+        padding: 20px 50px;
+    }
+}
+
+/* Untuk layar smartphone */
+@media (max-width: 767px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    .benefits h2 {
+        font-size: 1.5em;
+    }
+
+    .benefit-item {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    .pricing h2 {
+        font-size: 1.8em;
+    }
+
+    .pricing p {
+        font-size: 1.2em;
+    }
+}
+
